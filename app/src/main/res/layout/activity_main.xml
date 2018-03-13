@@ -4,30 +4,31 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.amit.vr.MainActivity" >
+    android:background="@color/colorPrimary"
+    tools:context="com.example.amit.vr.MainActivity">
 
     <EditText
         android:id="@+id/serverIpEditText"
-        android:width="200dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:selectAllOnFocus="true"
-        android:inputType="textUri|numberDecimal" />
+        android:width="200dp"
+        android:inputType="textUri|numberDecimal"
+        android:selectAllOnFocus="true" />
 
     <Button
         android:id="@+id/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connect"
         android:layout_below="@+id/serverIpEditText"
-        android:onClick="OnConnect" />
+        android:onClick="OnConnect"
+        android:text="Connect" />
 
     <Button
     android:id="@+id/dis"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="DisConnect"
     android:layout_below="@+id/send"
-    android:onClick="DisConnect" />
+        android:onClick="DisConnect"
+        android:text="DisConnect" />
 
 </RelativeLayout>

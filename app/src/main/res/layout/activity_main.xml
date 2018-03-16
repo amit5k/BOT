@@ -4,31 +4,58 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/background"
     tools:context="com.example.amit.vr.MainActivity">
+
 
     <EditText
         android:id="@+id/serverIpEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:background="#ffffff"
         android:inputType="textUri|numberDecimal"
-        android:selectAllOnFocus="true" />
+        android:labelFor="@+id/serverIpEditText"
+        android:padding="4dp"
+        android:selectAllOnFocus="true"
+
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/serverIpEditText"
+        android:layout_above="@+id/dis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
         android:onClick="OnConnect"
-        android:text="Connect" />
+        android:text="@string/connect" />
 
     <Button
-    android:id="@+id/dis"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/send"
+        android:id="@+id/dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
         android:onClick="DisConnect"
-        android:text="DisConnect" />
+        android:text="@string/disconnect" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="#ffffff"
+        android:padding="4dp"
+        android:text="@string/welcome"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="22sp" />
 
 </RelativeLayout>
